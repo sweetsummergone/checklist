@@ -19,4 +19,4 @@
 - Click "Save" button
 - You are awesome 🌞
 
-src: [Click](https://https://github.com/sweetsummergone/checklist/)
+GitHub Pages: [Click](https://sweetsummergone.github.io/checklist)
