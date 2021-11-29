@@ -2,7 +2,18 @@
   font-family: "Inter";
   font-weight: 400;
   margin: 30px auto;
-  max-width: 897px;
+  max-width: 90vw;
+  line-height: 5vh;
+  transition: 1s ease;
+}
+
+.main_theme-dark {
+  background-color: #111111;
+  color: skyblue;
+}
+
+.button__dark-mode {
+  background-color: sandybrown;
 }
 
 .list {

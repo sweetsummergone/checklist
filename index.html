@@ -14,160 +14,161 @@
 
     <title>Checklist</title>
   </head>
-  <button title="Toggle sidebar"></button>
-  <body class="main">
+  <button class="button__sidebar-toggle" id="button_sidebar" title="Toggle sidebar"></button>
+  <button class="button__dark-mode" id="button_dark" title="Dark mode"></button>
+  <body id="main" class="main">
     <!-- Sidebar -->
     <div id="sidebar" class="collapsed">
-      <button id="closer" title="Close sidebar"></button>
+      <button id="sidebar_closer" title="Close sidebar"></button>
       <form class="sidebar">
         <label for="sidebar__ul">Paste ul here</label>
-        <textarea class="form-control" id="sidebar__ul" rows="3"></textarea>
-        <button type="button" id="sidebar__save" onclick="setul()">Save</button>
+        <textarea class="sidebar__textarea form-control" id="sidebar__ul" rows="3"></textarea>
+        <button type="sidebar__button" id="sidebar__save" onclick="setul()">Save</button>
       </form>
     </div>
     <!-- /#sidebar-wrapper -->
 
-    <div class="list" id="list">
+    <section class="list" id="list">
       <ul>
         <li>All comments in the code</li>
         <li>
           Incorrect width of all elements except
-          <code class="code-inline code-inline_theme_light">intro__title</code>
+          <code class="code-inline">intro__title</code>
           on 1280, 768 viewport
         </li>
         <li>
           Incorrect
-          <code class="code-inline code-inline_theme_light">gap</code> between
+          <code class="code-inline">gap</code> between
           columns in
-          <code class="code-inline code-inline_theme_light">place</code>
+          <code class="code-inline">place</code>
           section, incorrect width of the right column in
-          <code class="code-inline code-inline_theme_light">place</code> section
+          <code class="code-inline">place</code> section
         </li>
         <li>
           Incorrect width of
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >place__button-buy</code
           >
           on 1280, 768, 320 viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">place</code> cards
+          <code class="code-inline">place</code> cards
           on 1280, 768 viewport (because of incorrect rows height, which is used
           in
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >grid-template-rows</code
           >
           style in
-          <code class="code-inline code-inline_theme_light">place</code>
+          <code class="code-inline">place</code>
           selector)
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">places</code> and
-          <code class="code-inline code-inline_theme_light">cover</code> section
+          <code class="code-inline">places</code> and
+          <code class="code-inline">cover</code> section
           on 1280, 768 viewport
         </li>
         <li>
           Incorrect text properties of the
-          <code class="code-inline code-inline_theme_light">lead__title</code>
+          <code class="code-inline">lead__title</code>
           on 768, 320 viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >lead__subtitle</code
           >
           and
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >lead__image-homeland</code
           >
           on 768 viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">intro</code> and
-          <code class="code-inline code-inline_theme_light">photo-grid</code>
+          <code class="code-inline">intro</code> and
+          <code class="code-inline">photo-grid</code>
           sections on 768, 320 viewport
         </li>
         <li>
-          <code class="code-inline code-inline_theme_light">place</code> section
+          <code class="code-inline">place</code> section
           is displayed incorrectly on 768 viewport (section should be centered,
           incorrect width of ythe columns, incorrect gap between columns,
           incorrect distance between image and button, incorrect text properties
           of the
-          <code class="code-inline code-inline_theme_light">place__title</code>)
+          <code class="code-inline">place__title</code>)
         </li>
         <li>
           Incorrect height of the
-          <code class="code-inline code-inline_theme_light">cover</code> section
+          <code class="code-inline">cover</code> section
           on 768 viewport
         </li>
         <li>
           Incorrect width of the
-          <code class="code-inline code-inline_theme_light">cover__title</code>
+          <code class="code-inline">cover__title</code>
           element on 768 viewport
         </li>
         <li>
-          <code class="code-inline code-inline_theme_light">cover</code> section
+          <code class="code-inline">cover</code> section
           shouldn't overlap
-          <code class="code-inline code-inline_theme_light">places</code>
+          <code class="code-inline">places</code>
           section on 768 viewport and intermediate screen resolutions
         </li>
         <li>
           Incorrect size of the
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >cover__button-buy</code
           >
           on 768 viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">cover</code> and
-          <code class="code-inline code-inline_theme_light">footer</code>
+          <code class="code-inline">cover</code> and
+          <code class="code-inline">footer</code>
           sections on 768, 320 viewport
         </li>
         <li>Incorrect size of the logo on 320 viewport</li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">logo</code> and
-          <code class="code-inline code-inline_theme_light">lead</code> on 320
+          <code class="code-inline">logo</code> and
+          <code class="code-inline">lead</code> on 320
           viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">lead__title</code>
+          <code class="code-inline">lead__title</code>
           and
-          <code class="code-inline code-inline_theme_light">lead__subtitle</code
+          <code class="code-inline">lead__subtitle</code
           >,
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >lead__subtitle</code
           >
           and
-          <code class="code-inline code-inline_theme_light"
+          <code class="code-inline"
             >lead__image-homeland</code
           >
           on 320 viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">lead</code> and
-          <code class="code-inline code-inline_theme_light">intro</code>
+          <code class="code-inline">lead</code> and
+          <code class="code-inline">intro</code>
           sections on 320 viewport
         </li>
         <li>
-          <code class="code-inline code-inline_theme_light">intro</code> section
+          <code class="code-inline">intro</code> section
           should be centered on 320 viewport
         </li>
         <li>
           Incorrect distance between
-          <code class="code-inline code-inline_theme_light">photo-grid</code>
-          and <code class="code-inline code-inline_theme_light">places</code> on
+          <code class="code-inline">photo-grid</code>
+          and <code class="code-inline">places</code> on
           320 viewport
         </li>
         <li>
           Incorrect distance between elements in
-          <code class="code-inline code-inline_theme_light">place</code> section
+          <code class="code-inline">place</code> section
           on 320 viewport
         </li>
         <li>
@@ -205,7 +206,7 @@
           org_html = list[i].innerHTML;
           new_html =
             checkbox.outerHTML +
-            label.outerHTML.substring(0, label.outerHTML.length - 8) +
+            label.outerHTML.substring(0, label.outerHTML.length - 8) + // Only for label type
             org_html +
             "</label>";
           list[i].innerHTML = new_html;
@@ -217,6 +218,8 @@
           document.querySelector("#sidebar__ul").value;
         pasteCheckboxes();
       }
+
+
     </script>
     <script src="./admin.js"></script>
     <script

@@ -1,10 +1,18 @@
-const buttons = document.querySelectorAll("button");
+const button_dark = document.querySelector("#button_dark");
+const button_sidebar = document.querySelector("#button_sidebar");
+const button_closer = document.querySelector("#sidebar_closer");
 
-buttons.forEach((button) =>
-  button.addEventListener("click", (_) => {
-    document.getElementById("sidebar").classList.toggle("collapsed");
-  })
-);
+button_sidebar.addEventListener("click", (_) => {
+  document.getElementById("sidebar").classList.toggle("collapsed");
+});
+
+button_closer.addEventListener("click", (_) => {
+  document.getElementById("sidebar").classList.toggle("collapsed");
+});
+
+button_dark.addEventListener("click", (_) => {
+  document.querySelector("#main").classList.toggle("main_theme-dark");
+});
 
 // function handleSubmit(event) {
 //   event.preventDefault();
