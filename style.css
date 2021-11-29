@@ -1,7 +1,7 @@
 .main {
   font-family: "Inter";
   font-weight: 400;
-  margin: 30px 30px;
+  margin: 30px auto;
   max-width: 897px;
 }
 
@@ -29,6 +29,7 @@ a {
 }
 
 .form-check-input {
+  margin-right: 1vw;
 }
 
 .form-check-input:checked + .form-check-label {
