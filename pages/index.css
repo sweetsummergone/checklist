@@ -2,5 +2,30 @@
 @import url("../vendor/normalize.css");
 @import url("../fonts/fonts.css");
 
-@import url("../style.css");
-@import url("../admin.css");
+/* Button */
+@import url("../blocks/button/button.css");
+@import url("../blocks/button/__sidebar-toggle/button__sidebar-toggle.css");
+@import url("../blocks/button/__download/button__download.css");
+@import url("../blocks/button/__dark-mode/button__dark-mode.css");
+
+/* Content */
+@import url("../blocks/content/content.css");
+
+/* List */
+@import url("../blocks/list/list.css");
+@import url("../blocks/list/crossed/list__crossed.css");
+
+/* Main */
+@import url("../blocks/main/main.css");
+@import url("../blocks/main/__theme/main__theme-dark.css");
+
+/* Sidebar */
+@import url("../blocks/sidebar/sidebar.css");
+@import url("../blocks/sidebar/sidebar-collapsed.css");
+@import url("../blocks/sidebar/__check-input/sidebar__check-input.css");
+@import url("../blocks/sidebar/__check-label/__check-label.css");
+@import url("../blocks/sidebar/__closer/sidebar__closer.css");
+@import url("../blocks/sidebar/__form/sidebar__form.css");
+@import url("../blocks/sidebar/__save/sidebar__save.css");
+@import url("../blocks/sidebar/__textarea/sidebar__textarea.css");
+@import url("../blocks/sidebar/__ul/sidebar__ul.css");

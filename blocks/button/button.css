@@ -1,0 +1,8 @@
+.button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: tomato;
+  cursor: pointer;
+}

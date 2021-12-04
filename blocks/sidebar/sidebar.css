@@ -4,32 +4,10 @@
   flex-direction: column;
   color: white;
   text-align: center;
-  margin-top: 10vh;
   list-style: none;
   line-height: 2rem;
-}
-
-#sidebar__ul {
-  width: 70%;
-  margin: auto;
-}
-
-#sidebar__save {
-  background-color: blanchedalmond;
-  border-style: none;
-  border-radius: 3px;
-  margin: auto;
-  width: 50%;
-  height: 4vh;
-}
-
-#sidebar,
-#content {
   height: 100%;
   overflow: auto;
-}
-
-#sidebar {
   position: absolute;
   left: 0;
   top: 0;
@@ -38,16 +16,4 @@
   width: 30vw;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
   transition: width 0.35s;
-}
-
-#sidebar.collapsed {
-  width: 0;
-}
-
-#content {
-  width: 100%;
-}
-
-#closer {
-  float: right;
 }
