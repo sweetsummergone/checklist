@@ -1,0 +1,18 @@
+.main {
+  font-family: "Inter";
+  font-weight: 400;
+  margin: 30px auto;
+  max-width: 90vw;
+  font-size: 1em;
+  transition: 1s ease;
+}
+
+.main ul li {
+  display: flex;
+  font-size: 1.4em;
+  list-style: none;
+}
+
+.main ul li label {
+  width: 95%;
+}

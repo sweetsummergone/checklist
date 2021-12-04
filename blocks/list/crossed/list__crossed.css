@@ -1,0 +1,4 @@
+.list__crossed {
+  text-decoration: line-through;
+  color: tomato;
+}
