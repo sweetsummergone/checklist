@@ -1,28 +1,29 @@
 const button_dark = document.querySelector("#button_dark");
 const button_sidebar = document.querySelector("#button_sidebar");
 const button_closer = document.querySelector("#sidebar_closer");
+const lis = document.querySelectorAll("li");
 
-button_sidebar.addEventListener("click", (_) => {
+button_sidebar.addEventListener("click", () => {
   document.getElementById("sidebar").classList.toggle("collapsed");
 });
 
-button_closer.addEventListener("click", (_) => {
+button_closer.addEventListener("click", () => {
   document.getElementById("sidebar").classList.toggle("collapsed");
 });
 
-button_dark.addEventListener("click", (_) => {
+button_dark.addEventListener("click", () => {
   document.querySelector("#main").classList.toggle("main_theme-dark");
 });
 
-// function handleSubmit(event) {
-//   event.preventDefault();
-
-//   const data = new FormData(event.target);
-
-//   const value = Object.fromEntries(data.entries());
-//   value.topics = data.getAll("topics");
-//   console.log({ value });
-// }
-
-// const form = document.querySelector("form");
-// form.addEventListener("submit", handleSubmit);
+lis.forEach(function (node, idx) {
+  node.addEventListener(
+    "click",
+    (event) => {
+      if (event.target.tagName.toUpperCase() === "LABEL") {
+        return;
+      }
+      event.target.parentElement.classList.toggle("crossed");
+    },
+    false
+  );
+});

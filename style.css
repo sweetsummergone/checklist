@@ -3,7 +3,7 @@
   font-weight: 400;
   margin: 30px auto;
   max-width: 90vw;
-  line-height: 5vh;
+  font-size: 1em;
   transition: 1s ease;
 }
 
@@ -13,7 +13,19 @@
 }
 
 .button__dark-mode {
+  background-color: salmon;
+}
+
+.button__download {
   background-color: sandybrown;
+}
+
+.crossed {
+  text-decoration: line-through;
+  color: tomato;
+}
+
+.form-check-label {
 }
 
 .list {
@@ -43,11 +55,15 @@ a {
   margin-right: 1vw;
 }
 
-.form-check-input:checked + .form-check-label {
-  text-decoration: line-through;
-  color: tomato;
+button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: tomato;
+  margin: 20px;
+  cursor: pointer;
 }
-
 /*
 .main ul li:nth-child(odd) {
   width: 1vw;
