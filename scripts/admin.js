@@ -14,16 +14,19 @@ button_dark.addEventListener("click", () => {
   document.getElementById("main").classList.toggle("main__theme-dark");
 });
 
-setlis();
+setQueries();
 
-function setlis() {
+function setQueries() {
   const lis = document.querySelectorAll("li");
 
   lis.forEach(function (node, idx) {
     node.addEventListener(
       "click",
       (event) => {
-        if (event.target.tagName.toUpperCase() === "LABEL") {
+        if (
+          event.target.tagName.toUpperCase() === "LABEL" ||
+          event.target.parentElement.tagName.toUpperCase() === "UL"
+        ) {
           return;
         }
         event.target.parentElement.classList.toggle("list__crossed");
